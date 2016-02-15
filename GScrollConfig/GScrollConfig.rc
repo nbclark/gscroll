@@ -1,0 +1,265 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE0 DIALOGEX 0, 0, 161, 139
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_TILT,14,13,129,104,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SWIPE,14,69,129,104,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Disable GScroll",IDC_CHECK_DISABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,120,144,10
+    LTEXT           "Swipe the button pad on  your phone to navigate.",IDC_STATIC,14,84,129,20
+    LTEXT           "Tap the directional pad (not click), and then tilt your phone up/down/left/right to scroll.",IDC_STATIC,14,29,129,25
+    GROUPBOX        "Tap and Tilt Mode",IDC_STATIC,7,3,144,54
+    GROUPBOX        "Panel Swipe Mode",IDC_STATIC,7,58,144,47
+    CONTROL         "Enable Scroll Wheel in All Applications",IDC_CHECK_SCROLLWHEEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,107,143,10
+END
+
+IDD_PROPPAGE1 DIALOGEX 0, 0, 158, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC0,"Static",SS_BITMAP | SS_CENTERIMAGE,7,20,16,16
+    EDITTEXT        IDC_EDIT0,26,22,98,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON0,125,22,26,12
+    CONTROL         "",IDC_STATIC1,"Static",SS_BITMAP | SS_CENTERIMAGE,7,40,16,16
+    EDITTEXT        IDC_EDIT1,26,42,98,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON1,125,42,26,12
+    CONTROL         "",IDC_STATIC2,"Static",SS_BITMAP | SS_CENTERIMAGE,7,60,16,16
+    EDITTEXT        IDC_EDIT2,26,62,98,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON2,125,62,26,12
+    CONTROL         "",IDC_STATIC3,"Static",SS_BITMAP | SS_CENTERIMAGE,7,80,16,16
+    EDITTEXT        IDC_EDIT3,26,82,98,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON3,125,82,26,12
+    CONTROL         "Enable Application Hot Keys",IDC_CHECK_APPENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,144,10
+    CONTROL         "Vibrate On Application Launch",IDC_CHECK_APPVIBRATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,122,144,10
+    CONTROL         "",IDC_STATIC4,"Static",SS_BITMAP | SS_CENTERIMAGE,7,101,16,16
+    EDITTEXT        IDC_EDIT4,26,102,98,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON4,125,102,26,12
+END
+
+IDD_REGISTER_DIALOG DIALOG  0, 0, 160, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register GScroll"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_PPC_ID,53,7,100,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Owner:",IDC_STATIC,7,7,27,10
+    EDITTEXT        IDC_KEY,53,22,100,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Code:",IDC_STATIC,7,22,24,10
+    PUSHBUTTON      "Register",IDC_REGISTER_BUTTON,7,44,146,15
+    PUSHBUTTON      "Run in Demo Mode",IDC_DEMO_BUTTON,7,61,146,15
+    CONTROL         "SIP2",IDC_SIP2,"SIPPREF",NOT WS_VISIBLE | WS_TABSTOP,73,111,14,14
+END
+
+IDD_SELECTLINK_DIALOG DIALOG  0, 0, 174, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_LISTVIEW,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,160,80
+END
+
+IDD_PROPPAGE2 DIALOGEX 0, 0, 158, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable Application Switching",IDC_CHECK_ALTTABENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,144,10
+    LTEXT           "With application switching enabled, you can swipe your finger from one side of the touch panel to the other to switch applications.",IDC_STATIC,7,22,144,31
+    CONTROL         "Enable AppSwitch Auto-Close",IDC_CHECK_ALTTABDELAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,54,144,10
+    EDITTEXT        IDC_EDIT_ALTTABDELAY,18,67,35,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_ALTTABDELAY,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HORZ | UDS_NOTHOUSANDS | WS_DISABLED,0,0,0,0
+    LTEXT           "(in seconds)",IDC_STATIC,73,70,93,8,WS_DISABLED
+END
+
+IDD_PROPPAGE3 DIALOGEX 0, 0, 158, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif" 
+BEGIN
+    CONTROL         "Allow directional keys to control",IDC_CHECK_CURSORKEYS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,144,10
+    LTEXT           "If enabled, pressing up/down/left/right on the nav pad to move the mouse. Clicking the action button will simulate a left mouse click.",IDC_STATIC,7,22,144,28
+    CONTROL         "",IDC_SLIDER_CURSOR,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_ENABLESELRANGE | WS_TABSTOP,7,64,144,20
+    LTEXT           "Acceleration of the Cursor",IDC_STATIC,7,54,144,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPPAGE0, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_PROPPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_REGISTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_SELECTLINK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PROPPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_PROPPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+APPLET_ICON             ICON                    "images\\otheroptions.ico"
+IDI_ICON1               ICON                    "images\\app.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_GPROFILE_SET_MENUBAR RCDATA 
+BEGIN
+    0x0190, 0x0002, 0xfffe, 0x0191, 0x0004, 0x0010, 0x01f4, 0x0000, 0xffff, 
+    0xfffe, 0x0192, 0x0004, 0x0010, 0x01f5, 0x0000, 0xffff
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK                BITMAP                  "images\\back.bmp"
+IDB_CALL                BITMAP                  "images\\call.bmp"
+IDB_END                 BITMAP                  "images\\end.bmp"
+IDB_HOME                BITMAP                  "images\\home.bmp"
+IDB_WHEEL               BITMAP                  "images\\wheel.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    APPLET_NAME             "mobileSRC GScroll"
+    APPLET_DESC             "Settings for mobileSRC GScroll"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GPROFILE_ACCEPT     "Accept"
+    IDS_GPROFILE_CANCEL     "Cancel"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

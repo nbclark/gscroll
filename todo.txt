@@ -1,0 +1,12 @@
+GScroll 2.0 Features
+--------------------
+
+Rewrite to poll instead of subclass
+Add smooth scrolling
+Add launch macros
+Add on screen button feedback
+Add features to alt+tab (close, ignore, just switch program)
+	Add Exclusion List
+	Look into keeping around icons or something
+	Maybe don't delete dialog
+Add gestures

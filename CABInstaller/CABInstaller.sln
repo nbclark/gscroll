@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CABInstaller", "CABInstaller.csproj", "{BED2ACDF-295E-4B3C-A510-55D68F28BC60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Demo|Any CPU = Demo|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BED2ACDF-295E-4B3C-A510-55D68F28BC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED2ACDF-295E-4B3C-A510-55D68F28BC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED2ACDF-295E-4B3C-A510-55D68F28BC60}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{BED2ACDF-295E-4B3C-A510-55D68F28BC60}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{BED2ACDF-295E-4B3C-A510-55D68F28BC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED2ACDF-295E-4B3C-A510-55D68F28BC60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
